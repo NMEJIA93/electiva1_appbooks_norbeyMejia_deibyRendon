@@ -14,7 +14,6 @@ const BookApi = () => {
     return (
         <>
             <div>
-                <h1>BookApi voy melo</h1>
                 <Books />
             </div>
         </>
