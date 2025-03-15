@@ -1,60 +1,81 @@
 .detail-book-card {
-  border: 1px solid #ddd;
-  border-radius: 12px;
-  padding: 24px;
-  width: 350px;
-  margin: 20px auto;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-  background-color: #e0e0e0; /* Fondo gris */
-  transition: transform 0.2s, box-shadow 0.2s;
-  text-align: center; /* Centrar el contenido */
-}
-
-.detail-book-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
-}
-
-.detail-book-card h1 {
-  font-size: 28px;
-  margin-bottom: 20px;
-  color: #333;
-}
-
-.detail-book-card p {
-  margin: 10px 0;
-  color: #555;
-}
-
-.detail-book-card ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.detail-book-card li {
-  margin: 6px 0;
-  color: #666;
-}
-
-.back-button {
-  display: block;
-  margin: 20px auto;
-  padding: 10px 20px;
-  width: 100%; /* Ancho del botón igual al de la tarjeta */
-  background: linear-gradient(45deg, #007bff, #6a0dad); /* Degradado azul a violeta */
-  color: white;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  text-align: center;
-  transition: background 0.3s, transform 0.2s;
-}
-
-.back-button:hover {
-  transform: translateY(-2px);
-}
-
-.back-button:focus {
-  outline: none;
-  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
-}
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 24px;
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    background-color: #e0e0e0; 
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .detail-book-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  }
+  
+  .detail-book-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  
+  .detail-book-info {
+    flex: 1;
+  }
+  
+  .detail-book-image {
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .detail-book-card h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .detail-book-card p {
+    margin: 10px 0;
+    color: #555;
+  }
+  
+  .detail-book-card ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .detail-book-card li {
+    margin: 6px 0;
+    color: #666;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .back-button {
+    padding: 10px 20px;
+    width: 100%; 
+    max-width: 200px; 
+    background: linear-gradient(45deg, #007bff, #6a0dad); 
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    transition: background 0.3s, transform 0.2s;
+  }
+  
+  .back-button:hover {
+    transform: translateY(-2px);
+  }
+  
+  .back-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+  }
